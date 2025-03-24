@@ -1,7 +1,7 @@
 ---
 title: "SISE2601 Schedule"
 author: "Nir Grinberg"
-date: "19/3/2023"
+date: "24/3/2025"
 output: html_document
 #rmarkdown::render("index.Rmd", "html_document")
 ---

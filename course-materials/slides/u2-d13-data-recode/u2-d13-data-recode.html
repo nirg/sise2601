@@ -63,18 +63,18 @@ rel_inc &lt;- read_excel("data/relig-income.xlsx")
 .small[
 
 ```
-## # A tibble: 12 x 6
-##   `Religious tradition`      `Less than $30,000` `$30,000-$49,99…
+## # A tibble: 12 × 6
+##   `Religious tradition`         `Less than $30…` `$30,000-$49,9…`
 ##   &lt;chr&gt;                                    &lt;dbl&gt;            &lt;dbl&gt;
 ## 1 Buddhist                                  0.36             0.18
 ## 2 Catholic                                  0.36             0.19
 ## 3 Evangelical Protestant                    0.35             0.22
 ## 4 Hindu                                     0.17             0.13
-## 5 Historically Black Protes…                0.53             0.22
+## 5 Historically Black Protestant             0.53             0.22
 ## 6 Jehovah's Witness                         0.48             0.25
 ## # … with 6 more rows, and 3 more variables:
-## #   $50,000-$99,999 &lt;dbl&gt;, $100,000 or more &lt;dbl&gt;,
-## #   Sample Size &lt;dbl&gt;
+## #   `$50,000-$99,999` &lt;dbl&gt;, `$100,000 or more` &lt;dbl&gt;,
+## #   `Sample Size` &lt;dbl&gt;
 ```
 ]
 
@@ -93,8 +93,8 @@ rel_inc %&gt;%
 ```
 
 ```
-## # A tibble: 12 x 6
-##   religion     `Less than $30,… `$30,000-$49,99… `$50,000-$99,99…
+## # A tibble: 12 × 6
+##   religion     `Less than $30…` `$30,000-$49,9…` `$50,000-$99,9…`
 ##   &lt;chr&gt;                   &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
 ## 1 Buddhist                 0.36             0.18             0.32
 ## 2 Catholic                 0.36             0.19             0.26
@@ -103,7 +103,7 @@ rel_inc %&gt;%
 ## 5 Historicall…             0.53             0.22             0.17
 ## 6 Jehovah's W…             0.48             0.25             0.22
 ## # … with 6 more rows, and 2 more variables:
-## #   $100,000 or more &lt;dbl&gt;, n &lt;dbl&gt;
+## #   `$100,000 or more` &lt;dbl&gt;, n &lt;dbl&gt;
 ```
 ]
 
@@ -115,7 +115,7 @@ If we want a new variable called `income` with levels such as "Less than $30,000
 
 
 ```
-## # A tibble: 48 x 4
+## # A tibble: 48 × 4
 ##    religion                   n income            proportion
 ##    &lt;chr&gt;                  &lt;dbl&gt; &lt;chr&gt;                  &lt;dbl&gt;
 ##  1 Buddhist                 233 Less than $30,000       0.36
@@ -156,7 +156,7 @@ rel_inc %&gt;%
 ```
 
 ```
-## # A tibble: 48 x 4
+## # A tibble: 48 × 4
 ##   religion     n income            proportion
 ##   &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;                  &lt;dbl&gt;
 ## 1 Buddhist   233 Less than $30,000       0.36
@@ -190,7 +190,7 @@ rel_inc %&gt;%
 ```
 
 ```
-## # A tibble: 48 x 5
+## # A tibble: 48 × 5
 ##   religion     n income            proportion frequency
 ##   &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;                  &lt;dbl&gt;     &lt;dbl&gt;
 ## 1 Buddhist   233 Less than $30,000       0.36        84

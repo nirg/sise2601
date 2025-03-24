@@ -22,9 +22,17 @@ library(emo)
 packageVersion("xaringan")
 ```
 
+---
+
 class: middle
 
 # Hello world!
+
+---
+
+class: middle
+
+# Who am I?
 
 ---
 
